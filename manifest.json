@@ -1,5 +1,5 @@
 {
-   "author": "Szymon Pilkowski",
+   "author": "Minh Anh",
    "background": {
       "page": "init.html"
    },
@@ -22,15 +22,16 @@
          }
       }
    },
-   "description": "Easily add bookmarks to any category. Includes spotlight-like search with mouse/keyboard support. Default key: cmd+b (win:ctrl+b)",
-   "homepage_url": "https://github.com/ardcore/chrome-better-bookmark",
+   "description": "Easily add bookmarks to any folder. Includes spotlight-like search with mouse/keyboard support. Default key: cmd+b (win:ctrl+b)",
+   "homepage_url": "https://github.com/minhanhhere/chrome-faster-bookmark",
    "icons": {
       "128": "bookmark.png",
       "16": "bookmark.png",
       "48": "bookmark.png"
    },
    "manifest_version": 2,
-   "name": "Faster Bookmark",
+   "name": "Faster Bookmark - Add Bookmark faster",
+   "shortname": "Faster Bookmark",
    "permissions": [ "bookmarks", "tabs" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.3.1"
