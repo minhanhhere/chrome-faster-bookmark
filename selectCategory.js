@@ -25,6 +25,7 @@ function createUiElement(node) {
 
   var el = document.createElement("span");
   el.setAttribute("data-id", node.id);
+  el.setAttribute("class", "folder");
   el.setAttribute("data-count", node.children.length);
   el.setAttribute("data-title", node.title);
   el.innerHTML = node.title;
