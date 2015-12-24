@@ -1,0 +1,95 @@
+<style>
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #666;
+    border: 1px solid #eee;
+    -webkit-border-radius: 6px;
+  }
+
+  body {
+    color: #333;
+  }
+
+  #search{
+    width: 366px;
+    padding: 10px 37px 10px 10px;
+    margin: 0 0 14px 0;
+    border: 0px;
+    height: 28px;
+    outline-width: 1px;
+    outline-color: #4c4c4c;
+    outline-offset: -2px;
+    outline-style: auto;
+  }
+
+  span {
+    /*font-family: "Lucida Grande", Tahoma, sans-serif;*/
+    font-size: 14px;
+    color: #666;
+    display: block;
+    white-space: nowrap;
+    padding: 5px 10px;
+    cursor: pointer;
+    -webkit-transition: background 0.1s ease-out;
+  }
+
+  span:hover + span:not(.create), .focus + span:not(.create) {
+    border-top-color: transparent;
+  }
+
+  span:hover, .focus {
+    /*color: #000;*/
+    border-radius: 1px;
+    background: #C5ECFC;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#fafafa)) !important;
+    -webkit-box-shadow: 1px 1px rgba(200, 200, 200, 0.5);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    -webkit-border-radius: 1px;
+    border: 1px solid #d6d6d6 !important;*/
+  }
+
+  span:first-child {
+    border-top-color: transparent;
+  }
+
+  .create {
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    white-space: normal;
+  }
+
+  #wrapper {
+    height: 445px;
+    overflow: auto;
+    padding-right: 4px;
+  }
+
+  #xsearchimg{
+    position: absolute;
+    right: 27px;
+    top: 51px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+</style>
+
+<body>
+  <h2>Add Bookmark</h2>
+  <div style="width: 380px;">
+    <input id="search" placeholder="Select folder..."/>
+    <img id="xsearchimg" src="search.png">
+  </div>
+  <div id="wrapper"></div>
+  <script src="fuse.js"></script>
+  <script src="selectCategory.js"></script>
+</body>
