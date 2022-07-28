@@ -75,7 +75,8 @@ function addBookmarkToCategory(categoryId, title, url) {
   chrome.bookmarks.create({
     'parentId': categoryId,
     'title': title,
-    'url': url
+    'url': url,
+    'index': 0
   });
 
 }
